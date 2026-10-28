@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00C7FD"/><stop offset="1" stop-color="#0068B5"/></linearGradient></defs>
+  <rect width="400" height="240" fill="url(#s)"/>
+  <circle cx="70" cy="55" r="28" fill="#FFD84D"/>
+  <g transform="translate(40,120) skewX(-20)">
+    <rect width="200" height="90" fill="#003C71" stroke="#ffffff" stroke-width="3"/>
+    <path d="M50 0v90M100 0v90M150 0v90M0 30h200M0 60h200" stroke="#00C7FD" stroke-width="2"/>
+  </g>
+  <rect x="120" y="210" width="8" height="30" fill="#ffffff"/>
+  <g transform="translate(280,70)">
+    <rect width="80" height="130" rx="10" fill="#0b1f3a" stroke="#ffffff" stroke-width="4"/>
+    <rect x="25" y="-12" width="30" height="12" rx="3" fill="#ffffff"/>
+    <rect x="10" y="12" width="60" height="106" rx="4" fill="#7CFC9A"/>
+    <rect x="10" y="12" width="60" height="4" fill="#0b1f3a"/>
+    <polygon points="44,30 26,70 40,70 34,100 56,58 42,58 50,30" fill="#0b1f3a"/>
+  </g>
+  <text x="320" y="228" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">99%</text>
+</svg>

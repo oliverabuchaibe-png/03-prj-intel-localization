@@ -1,0 +1,235 @@
+/* ===== Intel-inspired colors ===== */
+:root {
+  --intel-blue: #00579A;
+  --dark-blue: #003C71;
+  --energy-blue: #00C7FD;
+  --navy: #0b1f3a;
+  --light-bg: #f2f7fb;
+  --text: #1c2b3a;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(135deg, var(--dark-blue), var(--intel-blue));
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 1.5rem 3.5rem;
+}
+
+.eyebrow {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--energy-blue);
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #d6ecfa;
+}
+
+/* ===== Hint text ===== */
+.hint {
+  text-align: center;
+  color: var(--intel-blue);
+  font-weight: 600;
+  margin: 2rem 1rem 0.5rem;
+}
+
+/* ===== Timeline: horizontal scroll on large screens ===== */
+.timeline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1.5rem 2rem 2.5rem;
+  /* LevelUp: scroll snap */
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 2rem;
+  scroll-behavior: smooth;
+}
+
+/* Styled scrollbar */
+.timeline::-webkit-scrollbar {
+  height: 10px;
+}
+.timeline::-webkit-scrollbar-track {
+  background: #dbe7f1;
+  border-radius: 10px;
+}
+.timeline::-webkit-scrollbar-thumb {
+  background: var(--intel-blue);
+  border-radius: 10px;
+}
+
+/* ===== Milestone cards ===== */
+.milestone {
+  flex: 0 0 300px;
+  background: #ffffff;
+  border-radius: 14px;
+  border-top: 5px solid var(--energy-blue);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 60, 113, 0.12);
+  scroll-snap-align: start;
+  outline: none;
+  /* LevelUp: CSS transforms + transitions */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.milestone:hover,
+.milestone:focus {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(0, 60, 113, 0.25);
+}
+
+.milestone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+}
+
+.milestone-body {
+  padding: 1.2rem 1.3rem 1.4rem;
+}
+
+.year {
+  display: inline-block;
+  background: var(--intel-blue);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 0.6rem;
+}
+
+.milestone h3 {
+  font-size: 1.25rem;
+  color: var(--dark-blue);
+}
+
+/* Details hidden by default, revealed smoothly on hover */
+.details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  font-size: 0.95rem;
+  color: #2f3f4f;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+}
+
+.milestone:hover .details,
+.milestone:focus .details {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 0.7rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--navy);
+  color: #b9cde0;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== Small screens: stack the timeline vertically ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding: 1rem;
+  }
+
+  .milestone {
+    flex: none;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .milestone:hover,
+  .milestone:focus {
+    transform: scale(1.02);
+  }
+}
+
+
+/* ===== Added for Project 3 ===== */
+.skip-link {
+  position: absolute;
+  inset-inline-start: 1rem;
+  top: -4rem;
+  background: #fff;
+  color: var(--dark-blue);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  z-index: 1000;
+  font-weight: 600;
+}
+.skip-link:focus { top: 1rem; }
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, .milestone:focus-visible {
+  outline: 3px solid #ffb400;
+  outline-offset: 2px;
+}
+
+.hero h1 { margin-top: 0; }
+.section-title { color: var(--dark-blue); font-weight: 700; }
+
+.focus-col {
+  background: #fff;
+  border-radius: 14px;
+  border-top: 5px solid var(--energy-blue);
+  box-shadow: 0 4px 12px rgba(0, 60, 113, 0.12);
+  padding: 1.6rem;
+}
+.focus-icon { font-size: 2.2rem; color: var(--intel-blue); display: block; margin-bottom: 0.4rem; }
+.focus-col h3 { font-size: 1.25rem; color: var(--dark-blue); }
+.learn-more {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--intel-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.learn-more:hover { color: var(--dark-blue); transform: translateX(4px); }
+[dir="rtl"] .learn-more:hover { transform: translateX(-4px); }
+[dir="rtl"] .bi-arrow-right { transform: scaleX(-1); }
+
+.btn-primary { --bs-btn-bg: #00579A; --bs-btn-border-color: #00579A; --bs-btn-hover-bg: #003C71; --bs-btn-hover-border-color: #003C71; }
+.newsletter { background: #e6f0f8; padding: 3rem 0; }
+
+footer a { color: #ffffff; margin: 0 0.4rem; }
+footer { margin-top: 0; }

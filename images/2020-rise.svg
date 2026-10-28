@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <defs><linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#003C71"/><stop offset=".7" stop-color="#0068B5"/><stop offset="1" stop-color="#00C7FD"/></linearGradient></defs>
+  <rect width="400" height="240" fill="url(#dawn)"/>
+  <circle cx="200" cy="200" r="80" fill="#FFD84D" opacity=".25"/>
+  <circle cx="200" cy="200" r="55" fill="#FFD84D"/>
+  <rect y="200" width="400" height="40" fill="#0b1f3a"/>
+  <g stroke="#FFD84D" stroke-width="4" stroke-linecap="round" opacity=".8"><line x1="200" y1="125" x2="200" y2="105"/><line x1="140" y1="150" x2="125" y2="137"/><line x1="260" y1="150" x2="275" y2="137"/><line x1="115" y1="190" x2="95" y2="186"/><line x1="285" y1="190" x2="305" y2="186"/></g>
+  <polyline points="40,170 110,130 160,145 250,80 330,60" fill="none" stroke="#7CFC9A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="330,60 306,56 322,78" fill="#7CFC9A"/>
+  <text x="200" y="232" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="6">RISE 2030</text>
+</svg>

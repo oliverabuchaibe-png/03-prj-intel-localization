@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#003C71"/>
+  <path d="M0 190 Q50 175 100 190 T200 190 T300 190 T400 190 V240 H0Z" fill="#0068B5"/>
+  <path d="M0 205 Q50 192 100 205 T200 205 T300 205 T400 205 V240 H0Z" fill="#00C7FD" opacity=".7"/>
+  <path d="M170 30 C170 30 110 100 110 140 a60 60 0 0 0 120 0 C230 100 170 30 170 30Z" fill="#00C7FD"/>
+  <path d="M140 140 a30 30 0 0 0 30 30" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity=".8"/>
+  <g transform="translate(170,135)" stroke="#003C71" stroke-width="10" stroke-linecap="round"><line x1="-18" y1="0" x2="18" y2="0"/><line x1="0" y1="-18" x2="0" y2="18"/></g>
+  <g transform="translate(300,95)" fill="none" stroke="#7CFC9A" stroke-width="7" stroke-linecap="round">
+    <path d="M-30 10 A32 32 0 0 1 20 -25"/><path d="M30 -8 A32 32 0 0 1 -15 28"/>
+  </g>
+  <polygon points="320,62 324,86 302,78" fill="#7CFC9A"/>
+  <polygon points="280,128 276,104 298,112" fill="#7CFC9A"/>
+</svg>
